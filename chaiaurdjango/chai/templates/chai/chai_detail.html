@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %} Chai detail{% endblock %} 
+
+{% block content %}
+<h1>Chai detail Page</h1>
+
+<div class="m-4 p-4 border rounded">
+    <img class="rounded" src="{{chai.image.url}}" alt="">
+    <h3 class="text-2xl font-bold">{{chai.name}}</h3>
+    <p class="text-lg">{{chai.discription}}</p>
+    <p class="text-md font-semibold">Type: {{chai.type}}</p>
+    <p class="text-md font-semibold">Added on: {{chai.date_added}}</p>
+{% endblock %}

@@ -4,4 +4,20 @@
 
 {% block content %}
 <h1>All types of chai are available here</h1>
+
+<div class="grid grid-cols-3 gap-4 m-4" >    
+    {% for chai in chais %}
+    <div class="chai-items" >
+        <img class="rounded" src="{{chai.image.url}}" alt="">
+        <h3>{{chai.name}}</h3>
+        <a href="{% url 'chai_detail' chai.id %}">
+            <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                {{chai.type}} - {{chai.id}}
+
+            </button>
+        </a>
+    </div>
+    {% endfor %}
+</div>
+
 {% endblock %}
