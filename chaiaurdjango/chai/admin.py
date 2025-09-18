@@ -26,3 +26,4 @@ admin.site.register(ChaiVarity, ChaiVarityAdmin)
 admin.site.register(Store, StoreAdmin)
 admin.site.register(ChaiCertificate, ChaiCertificateAdmin)
 
+ 
